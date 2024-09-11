@@ -290,38 +290,141 @@
 
         <tr class="Agrupaciones">
             <td><b>DIV</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Es un contenedor genérico y versátil que se utiliza para agrupar y organizar otros elementos dentro de un 
+                documento HTML.
+            </td>
+            <td rowspan="3">
+                <b>Data-*: </b>Permite almacenar información personalizada en el elemento. Los atributos data-* son útiles para 
+                pasar datos a scripts sin afectar el marcado HTML. <br> <br>
+
+                <b>Lang: </b>Especifica el idioma del contenido del elemento. Esto puede ser útil para accesibilidad y para la 
+                selección de idioma en aplicaciones multilingües. <br> <br>
+
+                <b>Dir: </b>Define la dirección del texto en el elemento. Los valores posibles son ltr (de izquierda a derecha) 
+                y rtl (de derecha a izquierda). <br> <br>
+
+                <b>Title: </b>Proporciona información adicional sobre el elemento. Este texto aparece como un tooltip cuando el 
+                usuario pasa el ratón sobre el elemento.
+            </td>
+            <td>
+                &lt;div&gt; <br>
+                    &lt;p&gt;Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.&lt;/p&gt; <br>
+                &lt;/div&gt;
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>SPAN</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Es un contenedor en línea utilizado para marcar una parte del texto o un fragmento de un documento.
+            </td>
+            
+            <td>
+                &lt;span class="importante"&gt;esta parte&lt;/span&gt;
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>P</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Representa un párrafo en el codigo HTML
+            </td>
+
+            <td>
+                &lt;p&gt; <br>
+                    La letra p representa un parrafo <br>
+                &lt;/p&gt;
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>UL</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                En HTML se utiliza para definir una lista desordenada la cual contiene objetos
+                o elementos los cuales no tienen un orden. 
+            </td>
+            <td>
+                <b> <mark>Type:</mark></b> Especifica el tipo de viñeta que se usa para los elementos de la lista, este viene acompañado de: <br>
+                <b>disc: </b>viñetas redondas. <br>
+                <b>circle: </b>viñetas en forma de círculo. <br>
+                <b>square: </b>viñetas en forma de cuadrado. <br> <br>
+
+                Tambien contiene los atributos anteriores como: <br> <br>
+
+                <b>Data-*: </b>Permite almacenar información personalizada en el elemento. Los atributos data-* son útiles para 
+                pasar datos a scripts sin afectar el marcado HTML. <br> <br>
+
+                <b>Lang: </b>Especifica el idioma del contenido del elemento. Esto puede ser útil para accesibilidad y para la 
+                selección de idioma en aplicaciones multilingües. <br> <br>
+
+                <b>Dir: </b>Define la dirección del texto en el elemento. Los valores posibles son ltr (de izquierda a derecha) 
+                y rtl (de derecha a izquierda). <br> <br>
+
+                <b>Title: </b>Proporciona información adicional sobre el elemento. Este texto aparece como un tooltip cuando el 
+                usuario pasa el ratón sobre el elemento.
+            </td>
+            <td>
+                <b>En el documento HTML, si quisieramos conseguir algo como:</b> <br><br>
+                <p>
+                    •Elemento 1<br>
+                    •Elemento 2<br> <br>
+                </p>
+
+                <b>Se usaria <mark>cricle</mark></b> <br> <br>
+
+                &lt;ul type=<mark>"circle"</mark>&gt; <br>
+                    &lt;li&gt;Elemento 1&lt;/li&gt; <br>
+                    &lt;li&gt;Elemento 2&lt;/li&gt; <br>
+                &lt;/ul&gt;
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>OL</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para definir una lista ordenada, es decir, una lista cuyos 
+                elementos están numerados o etiquetados en un orden específico.
+            </td>
+            <td>
+                <b>Type: </b> Especifica el tipo de marcador utilizado para los números 
+                de la lista. <br> <br>
+
+                <b>Start: </b>Define el número inicial para la lista ordenada
+            </td>
+            <td>
+                <mark><b>USO NORMAL:</b></mark> <br> <br>
+
+                &lt;ol&gt;<br>
+                    &lt;li&gt;Elemento&lt;/li&gt;<br>
+                    &lt;li&gt;Elemento&lt;/li&gt;<br>
+                &lt;/ol&gt;<br> <br>
+                
+                1 Elemento <br>
+                2 Elemento <br> <br>
+
+                <mark><b>USO CON START:</b></mark> <br> <br>
+
+                &lt;ol start="5"&gt; <br>
+                    &lt;li&gt;Elemento &lt;/li&gt; <br>
+                    &lt;li&gt;Elemento &lt;/li&gt; <br>
+                &lt;/ol&gt; <br> <br>
+
+                5 Elemento <br>
+                6 Elemento <br><br>
+
+                <mark><b>USO CON TYPE:</b></mark> <br> <br>
+
+                &lt;ol type="A"&gt; <br>
+                    &lt;li&gt;Elemento 1&lt;/li&gt; <br>
+                    &lt;li&gt;Elemento 2&lt;/li&gt; <br>
+                &lt;/ol&gt;<br> <br>
+
+                A Elemento <br>
+                B Elemento
+            </td>
         </tr>
+
 
         <tr class="Agrupaciones">
             <td><b>LI</b></td>
@@ -365,7 +468,7 @@
             <td></td>
         </tr>
 
-        <tr class="Agrupaciones"></tr>
+        <tr class="Agrupaciones">
             <td><b>BLOCKQUOTE</b></td>
             <td></td>
             <td></td>
