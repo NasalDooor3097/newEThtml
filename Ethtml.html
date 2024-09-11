@@ -392,7 +392,7 @@
 
                 <b>Start: </b>Define el número inicial para la lista ordenada
             </td>
-            <td>
+            <td rowspan="2">
                 <mark><b>USO NORMAL:</b></mark> <br> <br>
 
                 &lt;ol&gt;<br>
@@ -428,65 +428,112 @@
 
         <tr class="Agrupaciones">
             <td><b>LI</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza dentro de las etiquetas &lt;ul&gt; (lista desordenada) o 
+                &lt;ol&gt; (lista ordenada) para crear elementos de lista individuales12.
+            </td>
+            <td rowspan="6">
+               Sin atributos 
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>DL</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para crear listas de términos y sus definiciones.
+            </td>
+            <td rowspan="3">
+                &lt;dl&gt; <b><mark>Indica la creacion de la lista</mark></b><br> <br>
+                    &lt;dt&gt;HTML&lt;/dt&gt; <b><mark>Indica el nombre del elemento</mark></b><br><br>
+                    &lt;dd&gt;Lenguaje de marcado para la creación de páginas web.&lt;/dd&gt;  <b><mark>Indica la descripcion del elemento</mark></b><br> <br>
+                    &lt;dt&gt;CSS&lt;/dt&gt; <br> <br>
+                    &lt;dd&gt;Lenguaje de estilo para diseñar y maquetar páginas web.&lt;/dd&gt; <br><br>
+                &lt;/dl&gt; 
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>DT</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se emplea para definir un término en una lista de definiciones.
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>DD</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para proporcionar una descripción o definición de un término
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>FIGURE</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para encapsular contenido autónomo, como ilustraciones, diagramas,
+                fotos, fragmentos de código, etc. Este contenido se considera una unidad independiente del flujo principal del documento, lo que significa que si se elimina, no debería afectar el flujo del contenido principa
+            </td>
+            <td rowspan="2" > 
+                <p>
+                    &lt;figure&gt;<br>
+                    &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+                    &lt;figcaption&gt;Figura 1: Descripción de la imagen.&lt;/figcaption&gt;<br>
+                    &lt;/figure&gt;<br>
+                </p>
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>FIGCAPTION</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para proporcionar una leyenda o descripción para el
+                contenido de su elemento padre.
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>BLOCKQUOTE</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                En HTML se utiliza para denotar una sección que está citada de otra fuente.
+                Es ideal para citas largas que necesitan ser destacadas del resto del contenido
+            </td>
+            <td>
+                <b>Cite: </b>  Este atributo se usa para proporcionar una URL que indica la fuente de la cita.
+            </td>
+            <td>
+                &lt;blockquote cite="https://www.ejemplo.com/fuente"&gt;
+                &lt;p&gt;Esta es una cita larga de otra fuente. Proporciona contexto adicional y puede incluir múltiples párrafos.&lt;/p&gt;
+              &lt;/blockquote&gt;
+                  
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>PRE</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para representar texto preformateado. El contenido dentro de un elemento
+            </td>
+            <td rowspan="2"> Sin atributos</td>
+            <td>
+                &lt;pre&gt;
+                    Este es un texto preformateado.
+                    Se mantiene el formato de espacios y saltos de línea.
+                &lt;/pre&gt;
+            </td>
         </tr>
 
         <tr class="Agrupaciones">
             <td><b>HR</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>
+                Se utiliza para representar una ruptura temática entre párrafos o secciones de contenido.
+                Tradicionalmente, se muestra como una línea horizontal que separa visualmente diferentes 
+                partes de una página web.
+            </td>
+            <td>
+                &lt;hr&gt;  <br><br>
+                <b>Resultado:</b> <br> <br>
+
+                <hr><br><br>
+            </td>
         </tr>
 
         <tr class="Titulo">
@@ -501,10 +548,166 @@
         </tr>
 
         <tr class="semantica">
-            <td><b></b></td>
+            <td><b>Mark</b></td>
+            <td>
+                Esta etiquetahace resaltar el texto de color amarillo 
+            </td>
             <td></td>
+            <td>
+                <mark>Este texto esta remarcado</mark> <br> <br>
+
+                &lt;mark&gt;Este texto esta remarcado&lt;/mark&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>B</b></td>
+            <td>Hace que las letras resalten en negriyas </td>
             <td></td>
+            <td>
+                Ejemplo: <br> <br> <b>Este texto esta en negritas</b> <br><br>
+                &lt;b&gt;Este texto esta en negritas&lt;/b&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>STRONG</b></td>
+            <td>
+                El contenido se muestra típicamente en negrita.
+            </td>
             <td></td>
+            <td>
+                <strong>Texto en strong</strong> <br> <br>
+
+                &lt;strong&gt;Texto en strong&lt;/strong&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>I</b></td>
+            <td>
+                Se utiliza para representar un rango de texto
+                que se diferencia del texto normal, generalmente
+                mostrándose en cursiva
+            </td>
+            <td></td>
+            <td>
+                <i>Texto con la etiqueta i</i> <br><br>
+
+                &lt;i&gt;Texto con la etiqueta i&lt;/i&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>EM</b></td>
+            <td>
+                Se utiliza para indicar que el texto en su interior debe ser enfatizado.
+                el cual esta representado en cursiva para hacer enfasis al texto.
+            </td>
+            <td></td>
+            <td>
+                <em>Texto con em</em> <br><br>
+
+                &lt;em&gt;Texto con em&lt;/em&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>SMALL</b></td>
+            <td>
+                se usa para mostrar texto en un tamaño más pequeño en comparación
+                con el texto circundante.
+            </td>
+            <td></td>
+            <td>
+                <small>Texto en small</small> <br> <br>
+
+                &lt;small&gt;Texto en small&lt;/small&gt;
+
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>DEL</b></td>
+            <td>
+                Se utiliza para representar contenido que ha sido 
+                eliminado o que ya no es relevante, y a la hora de 
+                visualizarlo se ve como texto tachado.
+            </td>
+            <td></td>
+            <td>
+                <del>Texto tachado</del> <br> <br>
+
+                &lt;del&gt;Texto tachado&lt;/del&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>INS</b></td>
+            <td>
+                Se utiliza para representar contenido que ha sido 
+                insertado o añadido al documento
+            </td>
+            <td></td>
+            <td>
+                <ins>Texto con ins</ins> <br> <br>
+
+                &lt;ins&gt;Texto con ins&lt;/ins&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>ABBR</b></td>
+            <td>
+                Se usa para envolver la abreviación "NASA" y el atributo 
+                title proporciona la expansión completa 
+            </td>
+            <td></td>
+            <td>
+                <abbr title="Universidad de Guadalajara">UDG</abbr> <br><br>
+
+                &lt;abbr title="Universidad de Guadalajara"&gt;UDG&lt;/abbr&gt;
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>SUP</b></td>
+            <td>
+                Se utiliza para definir texto en superíndice haciendo que el texto se muestre
+                en un tamaño más pequeño y elevado respecto a la línea base del texto circundante.                 
+            </td>
+            <td></td>
+            <td>
+                <sup>Texto en sup</sup> <br> <br>
+                &lt;sup&gt;Texto en sup&lt;sup&gt;
+
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>q</b></td>
+            <td>
+                Se utiliza para marcar citas cortas dentro del texto ye se emplea para señalar citas en línea 
+            </td>
+            <td></td>
+            <td>
+                <q>Texto con q</q> <br> <br>
+                &lt;q&gt;Texto con q&lt;/q&gt;
+
+            </td>
+        </tr>
+
+        <tr class="semantica">
+            <td><b>CITE</b></td>
+            <td>
+                Se utiliza para indicar el título de una obra o fuente, como un libro, una película, una canción,
+                un artículo de periódico o cualquier otra obra creativa.
+            </td>
+            <td></td>
+            <td>
+                <cite>Texto con cite</cite> <br> <br>
+                &lt;cite&gt;Texto con cite&lt;cite&gt;
+            </td>
         </tr>
 
         <tr class="semantica">
@@ -514,12 +717,6 @@
             <td></td>
         </tr>
 
-        <tr class="semantica">
-            <td><b></b></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
     </table>
 </body>
 </html>
