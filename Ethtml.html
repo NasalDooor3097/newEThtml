@@ -8,7 +8,7 @@
 </head>
 <body>
         
-    <table id="raiz">
+    <table id="etiquetas">
         <tr>
             <th colspan="4" class="Titulo"><span>Elementos de raiz</span></th>
         </tr>
@@ -552,7 +552,7 @@
             <td>
                 Esta etiquetahace resaltar el texto de color amarillo 
             </td>
-            <td></td>
+            <td rowspan="6">Sin atributos</td>
             <td>
                 <mark>Este texto esta remarcado</mark> <br> <br>
 
@@ -563,7 +563,7 @@
         <tr class="semantica">
             <td><b>B</b></td>
             <td>Hace que las letras resalten en negriyas </td>
-            <td></td>
+        
             <td>
                 Ejemplo: <br> <br> <b>Este texto esta en negritas</b> <br><br>
                 &lt;b&gt;Este texto esta en negritas&lt;/b&gt;
@@ -575,7 +575,7 @@
             <td>
                 El contenido se muestra típicamente en negrita.
             </td>
-            <td></td>
+            
             <td>
                 <strong>Texto en strong</strong> <br> <br>
 
@@ -590,7 +590,7 @@
                 que se diferencia del texto normal, generalmente
                 mostrándose en cursiva
             </td>
-            <td></td>
+            
             <td>
                 <i>Texto con la etiqueta i</i> <br><br>
 
@@ -604,7 +604,7 @@
                 Se utiliza para indicar que el texto en su interior debe ser enfatizado.
                 el cual esta representado en cursiva para hacer enfasis al texto.
             </td>
-            <td></td>
+        
             <td>
                 <em>Texto con em</em> <br><br>
 
@@ -618,7 +618,7 @@
                 se usa para mostrar texto en un tamaño más pequeño en comparación
                 con el texto circundante.
             </td>
-            <td></td>
+            
             <td>
                 <small>Texto en small</small> <br> <br>
 
@@ -634,7 +634,10 @@
                 eliminado o que ya no es relevante, y a la hora de 
                 visualizarlo se ve como texto tachado.
             </td>
-            <td></td>
+            <td>
+                <b>cite: </b>Especifica una URL que explica la razón de la eliminación del texto. <br> <br>
+                <b>datetime: </b>Indica la fecha y hora en que el texto fue eliminado.
+            </td>
             <td>
                 <del>Texto tachado</del> <br> <br>
 
@@ -648,7 +651,10 @@
                 Se utiliza para representar contenido que ha sido 
                 insertado o añadido al documento
             </td>
-            <td></td>
+            <td>
+                <b>title: </b>Proporciona información adicional que aparece como un tooltip cuando el usuario pasa el cursor sobre el texto. <br> <br>
+                <b>cite: </b>Especifica una URL que explica la razón de la inserción del texto.
+            </td>
             <td>
                 <ins>Texto con ins</ins> <br> <br>
 
@@ -662,7 +668,10 @@
                 Se usa para envolver la abreviación "NASA" y el atributo 
                 title proporciona la expansión completa 
             </td>
-            <td></td>
+            <td>
+                <b>title: </b>Proporciona la versión completa o una explicación de la abreviatura o 
+                acrónimo. Este atributo es opcional pero muy recomendado para mejorar la accesibilidad.
+            </td>
             <td>
                 <abbr title="Universidad de Guadalajara">UDG</abbr> <br><br>
 
@@ -676,7 +685,7 @@
                 Se utiliza para definir texto en superíndice haciendo que el texto se muestre
                 en un tamaño más pequeño y elevado respecto a la línea base del texto circundante.                 
             </td>
-            <td></td>
+            <td> Sin atributos</td>
             <td>
                 <sup>Texto en sup</sup> <br> <br>
                 &lt;sup&gt;Texto en sup&lt;sup&gt;
@@ -689,7 +698,9 @@
             <td>
                 Se utiliza para marcar citas cortas dentro del texto ye se emplea para señalar citas en línea 
             </td>
-            <td></td>
+            <td>
+                <b>cite: </b>Especifica una URL que indica la fuente de la cita.
+            </td>
             <td>
                 <q>Texto con q</q> <br> <br>
                 &lt;q&gt;Texto con q&lt;/q&gt;
@@ -703,20 +714,61 @@
                 Se utiliza para indicar el título de una obra o fuente, como un libro, una película, una canción,
                 un artículo de periódico o cualquier otra obra creativa.
             </td>
-            <td></td>
+            <td>
+                Sin atributos
+            </td>
             <td>
                 <cite>Texto con cite</cite> <br> <br>
                 &lt;cite&gt;Texto con cite&lt;cite&gt;
             </td>
         </tr>
 
-        <tr class="semantica">
-            <td><b></b></td>
+        <tr class="Titulo">
+            <th colspan="4">Contenido incrustrado</th>
+        </tr>
+
+        <tr class="subtitulos">
+            <th>Etiqueta</th>
+            <th>Descripcion</th>
+            <th>Atributos</th>
+            <th>Ejemplos</th>
+        </tr>
+
+        <tr class="incrustrado">
+            <td><b>iframe</b></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
 
+        <tr class="incrustrado">
+            <td><b>img</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr class="incrustrado">
+            <td><b>video</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr class="incrustrado">
+            <td><b>audio</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr class="incrustrado">
+            <td><b>math</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
+</body>
 </body>
 </html>
