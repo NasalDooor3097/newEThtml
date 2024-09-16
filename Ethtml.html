@@ -735,38 +735,577 @@
         </tr>
 
         <tr class="incrustrado">
-            <td><b>iframe</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><b>IFRAME</b></td>
+            <td>
+                Permite incrustar contenido de otra página web dentro de la tuya.
+            </td>
+            <td>
+                src: Especifica la URL del documento que se mostrará en el iframe. <br> <br>
+                srcdoc: Define el contenido HTML del iframe directamente, en lugar de especificar una URL. <br> <br>
+                width: Establece el ancho del iframe. Puede ser en píxeles o en porcentaje. <br> <br>
+                height: Define la altura del iframe. También puede ser en píxeles o en porcentaje. <br> <br>
+
+            </td>
+            <td>
+                &lt;iframe srcdoc="&lt;p&gt;Hello, world!&lt;/p&gt;"&gt;&lt;/iframe&gt; <br> <br>
+                &lt;iframe src="https://example.com"&gt;&lt;/iframe&gt; <br> <br>
+                &lt;iframe width="600" src="https://example.com"&gt;&lt;/iframe&gt; <br> <br>
+                &lt;iframe height="400" src="https://example.com"&gt;&lt;/iframe&gt;
+            </td>
         </tr>
 
         <tr class="incrustrado">
-            <td><b>img</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><b>IMG</b></td>
+            <td>
+                Se utiliza para incrustar imágenes en una página web.
+            </td>
+            <td>
+                src: Especifica la URL de la imagen que se debe mostrar. <br> <br>
+                alt: Proporciona un texto alternativo para la imagen, que se muestra si la imagen no se puede cargar y también es importante para la accesibilidad. <br> <br>
+                ismap: Indica que la imagen es parte de un mapa de imágenes que utiliza el protocolo HTTP para enviar las coordenadas del clic del usuario al servidor. <br> <br>
+                srcset: Define una lista de recursos de imágenes con diferentes tamaños para adaptarse a distintas resoluciones y tamaños de pantalla.
+            </td>
+            <td>
+                &lt;img src="small.jpg" srcset="large.jpg 1024w, medium.jpg 640w" sizes="(max-width: 600px) 480px, 800px" alt="Descripción de la imagen"&gt; <br> <br>
+                &lt;img src="image.jpg" ismap alt="Descripción de la imagen"&gt; <br> <br>
+                &lt;img src="https://example.com/image.jpg" alt="Descripción de la imagen"&gt; <br> <br>
+                &lt;img src="https://example.com/image.jpg" alt="Descripción de la imagen"&gt;
+            </td>
         </tr>
 
         <tr class="incrustrado">
-            <td><b>video</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><b>VIDEO</b></td>
+            <td>
+                Se utiliza para incrustar vídeos en una página web.
+            </td>
+            <td>
+                src: Especifica la URL del archivo de video. <br> <br>
+                controls: Agrega controles de reproducción (como play, pause, y volumen) al video. <br> <br>
+                autoplay: Hace que el video comience a reproducirse automáticamente cuando se carga la página. <br> <br>
+                loop: Reproduce el video en un bucle continuo, reiniciando automáticamente cuando termina. <br> <br>
+                muted: Silencia el video. <br> <br>
+                poster: Especifica una imagen que se muestra antes de que el video comience a reproducirse.
+            </td>
+            <td>
+                &lt;video src="video.mp4" controls&gt;&lt;/video&gt; <br> <br>
+                &lt;video src="video.mp4" controls&gt;&lt;/video&gt; <br> <br>
+                &lt;video src="video.mp4" autoplay&gt;&lt;/video&gt; <br> <br>
+                &lt;video src="video.mp4" loop&gt;&lt;/video&gt; <br> <br>
+                &lt;video src="video.mp4" muted autoplay&gt;&lt;/video&gt; <br> <br>
+                &lt;video src="video.mp4" poster="thumbnail.jpg" controls&gt;&lt;/video&gt;
+            </td>
         </tr>
 
         <tr class="incrustrado">
-            <td><b>audio</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td><b>AUDIO</b></td>
+            <td>
+                Se utiliza para incrustar contenido de audio en una página web.
+            </td>
+            <td>
+                src: Especifica la URL del archivo de audio. <br> <br>
+                controls: Agrega controles de reproducción (como play, pause, y volumen) al audio. <br> <br>
+                autoplay: Hace que el audio comience a reproducirse automáticamente cuando se carga la página. <br> <br>
+            </td>
+            <td>
+                &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt; <br> <br>
+                &lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt; <br> <br>
+                &lt;audio src="audio.mp3" autoplay&gt;&lt;/audio&gt;
+            </td>
         </tr>
 
-        <tr class="incrustrado">
-            <td><b>math</b></td>
-            <td></td>
-            <td></td>
-            <td></td>
+        <tr class="Titulo" >
+            <th colspan="4">Informacion tabulada</th>
+        </tr>
+
+        <tr class="subtitulos">
+            <th>Etiqueta</th>
+            <th>Descripcion</th>
+            <th>Atributos</th>
+            <th>Ejemplos</th>
+        </tr>
+
+        <tr class="tabulada">
+            <th><b>TABLE</b></th>
+            <td>
+                Se utiliza para crear tablas en una página web. 
+            </td>
+            <td>
+                border: Especifica el ancho del borde de la tabla. <br> <br>
+                cellspacing: Define el espacio entre las celdas de la tabla. <br> <br>
+                cellpadding: Establece el espacio entre el contenido de las celdas y sus bordes. <br> <br>
+            </td>
+            <td rowspan="4">
+                &lt;table border="1"&gt; <br>
+                &lt;tr&gt;<br>
+                    &lt;th&gt;Encabezado 1&lt;/th&gt; <br>
+                    &lt;th&gt;Encabezado 2&lt;/th&gt; <br>
+                &lt;/tr&gt; <br>
+                &lt;tr&gt; <br>
+                    &lt;td&gt;Celda 1&lt;/td&gt; <br>
+                    &lt;td&gt;Celda 2&lt;/td&gt; <br>
+                &lt;/tr&gt; <br>
+                &lt;tr&gt; <br>
+                    &lt;td&gt;Celda 3&lt;/td&gt; <br>
+                    &lt;td&gt;Celda 4&lt;/td&gt; <br>
+                &lt;/tr&gt; <br>
+                &lt;/table&gt; <br>
+            </td>
+        </tr>
+        <tr class="tabulada">
+            <th><b>TR</b></th>
+            <td>
+                Se utiliza para definir una fila dentro de una tabla.
+            </td>
+            <td>
+                align: Define la alineación del contenido de la fila. <br> <br>
+                valign: Define la alineación vertical del contenido de la fila.
+            </td>
+            
+        </tr>
+        <tr class="tabulada">
+            <th><b>TH</b></th>
+            <td>
+                Se utiliza para definir una celda de encabezado en una tabla.
+            </td>
+            <td>
+                colspan: Especifica cuántas columnas debe abarcar la celda de encabezado <br> <br>
+                rowspan: Define cuántas filas debe abarcar la celda de encabezado <br> <br>
+                abbr: Proporciona una abreviatura para el encabezado
+            </td>
+            
+        </tr>
+        <tr class="tabulada">
+            <th>TD</th>
+            <td>
+                Se utiliza para definir una celda de datos en una tabla.
+            </td>
+            <td>
+                colspan: Especifica cuántas columnas debe abarcar la celda. <br> <br>
+                rowspan: Define cuántas filas debe abarcar la celda. <br> <br>
+                headers: Asocia la celda con los encabezados de columna y fila especificados por los atributos <br> <br>  
+            </td>
+            
+        </tr>
+
+        <tr class="tabulada">
+            <th><b>TFOOT</b></th>
+            <td>
+                Se utiliza para agrupar el contenido del pie de una tabla.
+            </td>
+            <td>
+                align: Define la alineación del contenido dentro del pie de tabla. <br> <br>
+                valign: Define la alineación vertical del contenido dentro del pie de tabla. <br> <br>
+            </td>
+            <td>
+                &lt;tfoot align="center"&gt; <br> <br>
+                &lt;tfoot valign="bottom"&gt;
+            </td>
+            
+        </tr>
+        <tr class="tabulada">
+            <th><b>COL</b></th>
+            <td>
+                Se utiliza para definir propiedades específicas para una o varias columnas dentro de una tabla.
+            </td>
+            <td>
+                span: Especifica cuántas columnas abarca el elemento &lt;col&gt; <br> <br>
+                align: Define la alineación del contenido de las columnas. <br> <br>
+                valign: Define la alineación vertical del contenido de las columnas. <br> <br>
+            </td>
+            <td>
+                &lt;col span="2"&gt; <br> <br>
+                &lt;col align="center"&gt; <br> <br>
+                &lt;col valign="middle"&gt;
+            </td>
+        </tr>
+
+        <tr class="Titulo">
+            <th colspan="4">Formularios</th>
+        </tr>
+        <tr class="subtitulos">
+            <th>Etiqueta</th>
+            <th>Descripcion</th>
+            <th>Atributos</th>
+            <th>Ejemplos</th>
+        </tr>
+
+        <tr class="formulario">
+            <th><b>FORM</b></th>
+            <td>
+                Se utiliza para definir un formulario en una página web. Los formularios permiten a los usuarios enviar datos al servidor
+                para su procesamiento, como ingresar información, buscar contenido, o realizar transacciones. <br> <br>
+
+            </td>
+            <td>
+                action: Especifica la URL del servidor que procesará los datos del formulario. <br> <br>
+                method: Define el método HTTP que se utilizará para enviar los datos del formulario al servidor. <br> <br>
+                enctype: Especifica el tipo de codificación que se debe usar al enviar los datos del formulario. <br> <br>
+                target: Define dónde se abrirá el documento resultante después de enviar el formulario <br> <br>
+            </td>
+            <td rowspan="11">
+                &lt;form action="/submit" method="post"&gt; <br> <br>
+                &lt;fieldset&gt;<br> <br>
+                    &lt;legend&gt;Formulario de Ejemplo&lt;/legend&gt;<br> <br>
+
+                    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br> <br>
+                    &lt;input type="text" id="nombre" name="nombre" required&gt;&lt;br&gt;&lt;br&gt;<br> <br>
+
+                    &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;<br> <br>
+                    &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;<br> <br>
+
+                    &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;&lt;br&gt;<br> <br>
+                    &lt;textarea id="mensaje" name="mensaje" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;<br> <br>
+
+                    &lt;label for="pais"&gt;País:&lt;/label&gt;<br> <br>
+                    &lt;select id="pais" name="pais"&gt;<br> <br>
+                    &lt;optgroup label="América"&gt;<br> <br>
+                        &lt;option value="mx"&gt;México&lt;/option&gt;<br> <br>
+                        &lt;option value="us"&gt;Estados Unidos&lt;/option&gt;<br> <br>
+                    &lt;/optgroup&gt;<br> <br>
+                    &lt;optgroup label="Europa"&gt;<br> <br>
+                        &lt;option value="es"&gt;España&lt;/option&gt;<br> <br>
+                        &lt;option value="fr"&gt;Francia&lt;/option&gt;<br> <br>
+                    &lt;/optgroup&gt;<br> <br>
+                    &lt;/select&gt;&lt;br&gt;&lt;br&gt;<br> <br>
+
+                    &lt;label for="navegador"&gt;Navegador:&lt;/label&gt;<br> <br>
+                    &lt;input list="navegadores" id="navegador" name="navegador"&gt;<br> <br>
+                    &lt;datalist id="navegadores"&gt;<br> <br>
+                    &lt;option value="Chrome"&gt;<br> <br>
+                    &lt;option value="Firefox"&gt;<br> <br>
+                    &lt;option value="Safari"&gt;<br> <br>
+                    &lt;option value="Edge"&gt;<br> <br>
+                    &lt;/datalist&gt;&lt;br&gt;&lt;br&gt;<br> <br>
+
+                    &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br> <br>
+                &lt;/fieldset&gt;<br> <br>
+                &lt;/form&gt;<br> <br>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>INPUT</b></th>
+            <td>
+                Permite a los usuarios introducir datos en una página web. 
+                La etiqueta &lt;input&gt; puede tener varios tipos y atributos, y su funcionalidad varía según el valor del atributo type.  <br> <br>
+            </td>
+            <td>
+                type: Define el tipo de campo de entrada. Los valores más comunes incluyen: <br> <br>
+                text: Campo de texto de una sola línea. <br> <br>
+                password: Campo para contraseñas, oculta el texto ingresado. <br> <br>
+                email: Campo para direcciones de correo electrónico, con validación de formato. <br> <br>
+                number: Campo para ingresar números. <br> <br>
+                date: Campo para seleccionar fechas. <br> <br>
+                checkbox: Casilla de verificación.<br> <br>
+                radio: Botón de opción en un grupo.<br> <br>
+                file: Campo para seleccionar archivos.<br> <br>
+                submit: Botón para enviar el formulario.<br> <br>
+                reset: Botón para restablecer los campos del formulario.<br> <br>
+                button: Botón genérico.<br> <br>
+                range: Campo para seleccionar un valor dentro de un rango.<br> <br>
+                tel: Campo para números de teléfono.<br> <br>
+                url: Campo para URLs.<br> <br>placeholder: Muestra un texto de sugerencia dentro del campo de entrada cuando está vacío, que desaparece cuando el usuario comienza a escribir. <br> <br>
+                required: Indica que el campo es obligatorio y debe ser completado antes de enviar el formulario. Este atributo se usa como un booleano. <br> <br>
+                readonly: Hace que el campo de entrada sea de solo lectura, impidiendo que el usuario modifique su valor. Este atributo se usa como un booleano. <br> <br>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>LABEL</b></th>
+            <td>
+                Se utiliza para definir una etiqueta para un elemento de formulario, como un campo de entrada (&lt;input&gt;), una caja de selección (&lt;select&gt;), o un área de texto (&lt;textarea&gt;). <br> <br>
+            </td>
+            <td>
+                for: Este atributo se usa para asociar el &lt;label&gt; con un campo de formulario específico mediante el valor del atributo id del campo.
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>TEXTAREA</b></th>
+            <td>
+                Se utiliza para crear un área de texto multilínea en un formulario donde los usuarios pueden ingresar texto más largo que no se ajustaría a un campo de entrada de una sola línea. <br>
+            </td>
+            <td>
+                rows: Define el número de filas visibles en el área de texto.  <br> <br>
+                cols: Define el número de columnas visibles en el área de texto.  <br> <br>
+                placeholder: Muestra un texto de sugerencia dentro del área de texto cuando está vacío. <br> <br>
+                maxlength: Define el número máximo de caracteres que el usuario puede ingresar en el área de texto. <br> <br>
+                readonly: Hace que el área de texto sea de solo lectura, impidiendo que el usuario modifique su contenido. <br> <br>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>BUTTON</b></th>
+            <td>
+                Se utiliza para crear un botón interactivo en una página web.
+            </td>
+            <td>
+                type: Define el tipo de botón. Los valores posibles son: <br> <br>
+
+                submit: Envía el formulario en el que está incluido. Este es el valor predeterminado si no se especifica ningún tipo. <br> <br>
+                reset: Restablece los campos del formulario a sus valores iniciales. <br> <br>
+                button: Un botón genérico que no tiene ninguna funcionalidad predeterminada y puede ser utilizado para ejecutar scripts o realizar otras acciones programáticas. <br> <br>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>SELECT</b></th>
+            <td>
+                Se utiliza para crear un menú desplegable, que permite a los usuarios seleccionar una opción de una lista predefinida.
+            </td>
+            <td>
+                multiple: Permite seleccionar múltiples opciones del menú desplegable. Cuando se usa este atributo, el menú desplegable se convierte en una lista múltiple. <br> <br> 
+
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>OPTION</b></th>
+            <td>
+                Se utiliza dentro de un elemento &lt;select&gt; o &lt;optgroup&gt; para definir las opciones que el usuario puede seleccionar en un menú desplegable. <br>
+            </td>
+            <td>
+                value: Define el valor que se enviará al servidor cuando el formulario se envíe con esta opción seleccionada. Si no se especifica un atributo value, el contenido 
+                del texto de la opción se enviará como valor. <br> <br>
+
+                selected: Indica que la opción debe estar seleccionada por defecto cuando se carga el formulario. Este atributo se usa como un booleano. Solo una opción puede 
+                tener este atributo en un menú desplegable de un solo select. <br> <br>
+
+                disabled: Desactiva la opción, haciéndola no seleccionable por el usuario. Esto es útil para mostrar opciones que están deshabilitadas temporalmente. <br> <br>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>LEGEND</b></th>
+            <td>
+                Se utiliza para proporcionar una descripción o título para un grupo de elementos de formulario dentro de un contenedor <br>
+            </td>
+            <td>
+                Sin atributos
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>OUTPUT</b></th>
+            <td>
+                Se utiliza para mostrar el resultado de un cálculo o una acción en una página web.
+            </td>
+            <td>
+                for: Este atributo especifica los identificadores de los elementos de formulario cuyas entradas son usadas para calcular el valor <br>
+            </td>
+        </tr>
+        <tr class="formulario">
+            <th><b>DATALIST</b></th>
+            <td>
+                Se utiliza para proporcionar una lista de opciones predefinidas para un campo de entrada, 
+                permitiendo que los usuarios elijan entre una lista de valores sugeridos. <br> <br>
+            </td>
+            <td>
+                value: Define el valor que se sugiere para la opción. <br> <br>
+                label: Proporciona una etiqueta alternativa para la opción, que se muestra en lugar del texto del contenido de la opción. <br> <br>
+                disabled: Desactiva la opción, haciéndola no seleccionable. Esto puede ser útil para mostrar opciones que no están disponibles actualmente.
+            </td>
+        </tr>
+
+        <tr class="formulario">
+            <th><b>OPTGROUP</b></th>
+            <td>
+                Se utiliza para agrupar un conjunto de opciones dentro de un elemento 
+            </td>
+            <td>
+                label: Este atributo especifica el texto que se mostrará como encabezado del grupo de opciones en el menú desplegable. El valor de label actúa como una etiqueta para el grupo de opciones que sigue.
+            </td>
+        </tr>
+        <tr class="Titulo">
+            <th colspan="4">Elementos interactivos</th>
+        </tr>
+
+        <tr class="subtitulos">
+            <th>Etiqueta</th>
+            <th>Descripcion</th>
+            <th>Atributos</th>
+            <th>Ejemplos</th>
+        </tr>
+
+        <tr class="interactivo">
+            <th><b>A</b></th>
+            <td>
+                Se utiliza para crear enlaces que permiten a los usuarios navegar de una página web a otra, o a una sección específica dentro de la misma página <br>
+            </td>
+            <td>
+                target: Especifica dónde se debe abrir el enlace. <br> <br>
+                rel: Define la relación entre el documento actual y el documento enlazado. <br> <br>
+                download: Indica que el enlace debe tratarse como una descarga, en lugar de seguir la URL. <br> <br>
+                hreflang: Especifica el idioma del recurso al que se enlaza.<br> <br>
+                type: Indica el tipo de contenido del recurso enlazado. <br> <br>
+            </td>
+            <td>
+                &lt;a href="https://www.example.com" target="_blank"&gt;Visita Example.com&lt;/a&gt;
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>SUMMARY</b></th>
+            <td>
+                Permite a los usuarios ocultar o mostrar contenido adicional en una página web.
+            </td>
+            <td>
+                title: Proporciona un texto de ayuda que aparece cuando el usuario pasa el cursor sobre el elemento 
+            </td>
+            <td>
+                &lt;details&gt; <br> <br>
+                &lt;summary&gt;Haz clic para más información&lt;/summary&gt; <br> <br>
+                &lt;p&gt;Este es el contenido adicional que se muestra al hacer clic en el resumen.&lt;/p&gt; <br> <br>
+                &lt;/details&gt; <br> <br>
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>FIELDSET</b></th>
+            <td>
+                Se utiliza para agrupar elementos relacionados dentro de un formulario
+            </td>
+            <td>
+                disabled: Este atributo se utiliza para desactivar todos los controles de formulario contenidos dentro del &lt;fieldset&gt;. Los usuarios no podrán interactuar con ningún elemento del formulario dentro del &lt;fieldset&gt; si este atributo está presente. <br> <br>
+                Valor: Este atributo no tiene un valor específico; simplemente debe estar presente para desactivar los controles.
+                    
+            </td>
+            <td>
+                &lt;form&gt; <br> <br>
+                &lt;fieldset&gt;<br> <br>
+                    &lt;legend&gt;Información Personal&lt;/legend&gt;<br> <br>
+                    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br> <br>
+                    &lt;input type="text" id="nombre" name="nombre"&gt;&lt;br&gt; <br> <br>
+                    &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;<br> <br>
+                    &lt;input type="email" id="email" name="email"&gt;<br> <br>
+                &lt;/fieldset&gt;<br> <br>
+                &lt;/form&gt;<br> <br>
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>MAP</b></th>
+            <td>
+                Se utiliza para definir un mapa de imagen interactivo, donde se pueden crear áreas clicables en una imagen que dirigen a diferentes recursos o secciones de una página web.
+            </td>
+            <td>
+                Sinn atributos
+            </td>
+            <td>
+                &lt;img src="imagen.jpg" usemap="#mapa"&gt; <br> <br>
+                &lt;map name="mapa"&gt;<br> <br>
+                &lt;area shape="rect" coords="34,44,270,350" href="link1.html"&gt; <br> <br>
+                &lt;/map&gt; <br> <br>
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>AREA</b></th>
+            <td>
+                La etiqueta &lt;area&gt; en HTML se utiliza dentro de un elemento &lt;map&gt; para definir áreas específicas dentro de una imagen que son interactivas.
+            </td>
+            <td>
+                shape: Define la forma del área clicable. Los valores posibles son: <br> <br>
+
+                rect (rectángulo): Define una región rectangular.<br> <br>
+
+                circle (círculo): Define una región circular.<br> <br>
+
+                poly (polígono): Define una región poligonal con múltiples lados.<br> <br>
+
+                Valor: rect, circle, poly.<br> <br>
+
+                coords: Especifica las coordenadas para la forma del área. La interpretación de las coordenadas depende del valor del atributo shape:<br> <br>
+
+                Para rect: Cuatro valores que representan las coordenadas del punto superior izquierdo y el punto inferior derecho (x1, y1, x2, y2).<br> <br>
+
+                Para circle: Tres valores que representan las coordenadas del centro del círculo y el radio (x, y, radio).<br> <br>
+
+                Para poly: Un conjunto de coordenadas que definen los vértices del polígono.<br> <br>
+
+                Valor: Una serie de números separados por comas.<br> <br>
+
+                href: La URL a la que se debe dirigir el usuario al hacer clic en el área. Puede ser una URL externa, una URL interna, o un identificador de anclaje en la misma página.<br> <br>
+
+                Valor: Una URL o identificador de anclaje.<br> <br>
+
+                alt: Proporciona un texto alternativo para el área, útil para la accesibilidad y para los casos en los que la imagen no se puede cargar. Este texto es utilizado por lectores de pantalla y se muestra si la imagen está ausente.<br> <br>
+
+                Valor: Texto descriptivo.<br> <br>
+
+                target: Especifica dónde se debe abrir el enlace. Los valores comunes son _blank (para abrir en una nueva pestaña o ventana), _self (para abrir en la misma ventana o pestaña), _parent (para abrir en el marco padre), y _top (para abrir en el marco completo).<br> <br>
+
+                Valor: _blank, _self, _parent, _top.<br> <br>
+            </td>
+            <td>
+                &lt;map name="mapa"&gt; <br> <br>
+                &lt;area shape="rect" coords="34,44,270,350" href="link1.html"&gt; <br> <br>
+                &lt;/map&gt; <br> <br>
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>PROGRESS</b></th>
+            <td>
+                se utiliza para mostrar una barra de progreso que indica el avance de una tarea o proceso en curso.
+            </td>
+            <td>
+                value: Define el valor actual del progreso. Este atributo especifica cuánto se ha completado de la tarea en comparación con el valor máximo. <br><br>
+
+                Valor: Un número que representa el progreso actual. <br> <br>
+
+                max: Define el valor máximo posible de progreso. Esto establece el total de la tarea que debe completarse. <br> <br>
+
+                Valor: Un número que representa el valor máximo. <br> <br>
+            </td>
+            <td>
+                &lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>EMBED</b></th>
+            <td>
+                Se utiliza para incrustar contenido externo en una página web, como multimedia o aplicaciones interactivas.
+            </td>
+            <td>
+                src: Especifica la URL del recurso que se desea incrustar. Este puede ser un archivo de audio, video, imagen, o incluso un documento. <br> <br>
+                type: Define el tipo MIME del recurso incrustado, lo cual ayuda al navegador a identificar y manejar el contenido de manera adecuada. <br> <br>
+
+            </td>
+            <td>
+                &lt;embed src="video.mp4" width="400" height="300"&gt;
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>METER</b></th>
+            <td>
+                Se utiliza para representar una medida escalar dentro de un rango conocido, como una cantidad que se ha completado, un nivel de capacidad, o un valor en relación con un rango definido.
+            </td>
+            <td>
+                value: Define el valor actual de la medición. Este atributo especifica el valor que se está midiendo y se representa dentro del rango establecido. <br> <br>
+                min: Define el valor mínimo del rango de la medición. Este atributo establece el límite inferior del rango en el que se mide el valor. <br> <br>
+                max: Define el valor máximo del rango de la medición. Este atributo establece el límite superior del rango en el que se mide el valor. <br> <br>
+                low: Define el valor por debajo del cual la medición se considera baja. Se utiliza para establecer un umbral bajo dentro del rango de medición 
+            </td>
+            <td>
+                &lt;meter value="0.6" min="0" max="1"&gt;60%&lt;/meter&gt;
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>OBJECT</b></th>
+            <td>
+            Se utiliza para incrustar contenido multimedia o documentos externos dentro de una página web.
+            </td>
+            <td>
+                data: Define la URL del recurso externo que se va a incrustar. <br> <br>
+                type: Especifica el tipo MIME del recurso incrustado. <br> <br>
+                form: Asocia el objeto a un formulario específico. 
+            </td>
+            <td>
+                &lt;object data="archivo.pdf" type="application/pdf" width="600" height="400"&gt;&lt;/object&gt;
+            </td>
+        </tr>
+        <tr class="interactivo">
+            <th><b>DETAILS</b></th>
+            <td>
+                Se utiliza para crear una sección de contenido que puede ser expandida o contraída por el usuario. 
+            </td>
+            <td>
+                open: Este atributo booleano indica que el contenido dentro de &lt;details&gt; debe estar expandido por defecto cuando la página se carga.
+            </td>
+            <td>
+                &lt;details&gt; <br> <br>
+                &lt;summary&gt;Más información&lt;/summary&gt; <br> <br>
+                &lt;p&gt;Este es el contenido adicional que se puede mostrar u ocultar.&lt;/p&gt;<br> <br>
+                &lt;/details&gt;<br> <br>
+            </td>
         </tr>
     </table>
 </body>
